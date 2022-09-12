@@ -1,12 +1,15 @@
 from glob import escape
 import requests
 import json
+import acesso
+
+api = acesso.filme_key
 
 def existeFilmes(titulo):
     quant = 0
     
     try:
-        req = requests.get('http://www.omdbapi.com/?apikey=2b9c6078&s=' + titulo + '&type=movie')
+        req = requests.get('http://www.omdbapi.com/?apikey='+ api +'&s=' + titulo + '&type=movie')
         resposta = json.loads(req.text)
     except:
         print('Conexão falhou')
@@ -20,7 +23,7 @@ def listaFilmes(titulo):
 
     for i in range(1,101):
         try:
-            url = 'http://www.omdbapi.com/?apikey=2b9c6078&s=' + titulo + '&type=movie&page=' + str(i)
+            url = 'http://www.omdbapi.com/?apikey='+ api +'&s=' + titulo + '&type=movie&page=' + str(i)
             req = requests.get(url)
             resposta = json.loads(req.text)
 

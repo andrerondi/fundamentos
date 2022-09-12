@@ -1,9 +1,12 @@
 import requests
 import json
+import acesso
+
+api = acesso.filme_key
 
 def requisicao(titulo):
     try:
-        req = requests.get('http://www.omdbapi.com/?apikey=2b9c6078&t=' + titulo + '&type=movie')
+        req = requests.get('http://www.omdbapi.com/?apikey=' + api + '&t=' + titulo + '&type=movie')
         dicionario = json.loads(req.text)
         return dicionario
     except:
