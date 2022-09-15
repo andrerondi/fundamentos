@@ -25,5 +25,6 @@ Projeto construído do evento Next Level Week da Rocketseat
 
 ## 😎 Contato
 
-slippandre@gmail.com
-andre_castro_rondi@hotmail.com
+📧 slippandre@gmail.com
+
+📧 andre_castro_rondi@hotmail.com
