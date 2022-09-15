@@ -16,6 +16,8 @@ Projeto construído do evento Next Level Week da Rocketseat
 
 [📎 Clique aqui para acessar](https://andrerondi.github.io/fundamentos/nlw-esports-explorer/)
 
+[📎 Clique aqui para acessar o repositório](https://github.com/andrerondi/fundamentos/tree/main/nlw-esports-explorer)
+
 ### 💻 Tecnologias
 - HTML
 - CSS
